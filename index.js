@@ -24,7 +24,7 @@ document.querySelector('form').addEventListener('submit', event => {
    var copyBtn = document.getElementById("copybtn");
   copyBtn.addEventListener('click', () => {
   /* Get the text field */
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("link-input");
 
   /* Select the text field */
   copyText.select();
