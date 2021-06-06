@@ -26,7 +26,7 @@ document.querySelector('form').addEventListener('submit', event => {
   var copyText = document.getElementById("myInput");
 
   /* Select the text field */
-  
+  linkInput.select();
   copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
   /* Copy the text inside the text field */
