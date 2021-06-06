@@ -21,19 +21,19 @@ document.querySelector('form').addEventListener('submit', event => {
   const linkInput = document.querySelector('#link-input');
   linkInput.value = `${window.location}#${encrypted}`;
   linkInput.select();
-   var copyBtn = document.getElementById("copybtn");
+  var copyBtn = document.getElementById("copybtn");
   copyBtn.addEventListener('click', () => {
   /* Get the text field */
-  var copyText = document.getElementById("link-input");
+  
 
   /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  
+  linkInput.setSelectionRange(0, 99999); /* For mobile devices */
 
   /* Copy the text inside the text field */
   document.execCommand("copy");
 
   /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  alert("Copied the text: " + linkInput.value);
 });
 });
