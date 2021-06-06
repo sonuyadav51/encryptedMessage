@@ -21,7 +21,8 @@ document.querySelector('form').addEventListener('submit', event => {
   const linkInput = document.querySelector('#link-input');
   linkInput.value = `${window.location}#${encrypted}`;
   linkInput.select();
-  function myFunction() {
+   var copyBtn = document.getElementById("copybtn");
+  copyBtn.addEventListener('click', () => {
   /* Get the text field */
   var copyText = document.getElementById("myInput");
 
@@ -34,5 +35,5 @@ document.querySelector('form').addEventListener('submit', event => {
 
   /* Alert the copied text */
   alert("Copied the text: " + copyText.value);
-}
+});
 });
